@@ -1,0 +1,24 @@
+# To ignore any directory named DirectoryB within a 
+# directory named DirectoryA with any number of 
+# directories in between, use ** between the directories
+DOC/
+
+# Ignoring directories
+# Both the directory itself and its contents will be ignored.
+TestTool/
+obj/
+bin/
+.vs/
+.svn/
+packages/
+_executable/
+# To ignore files only at the top level directory, but not in its
+# subdirectories, prefix the rule with a `/`
+/*.bat
+/*.sh
+/*.ps1
+/*.txt
+/*.db
+/*.py
+/*.bak
+/*.ndproj
