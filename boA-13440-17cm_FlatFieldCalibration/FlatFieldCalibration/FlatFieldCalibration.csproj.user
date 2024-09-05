@@ -13,7 +13,16 @@
     <Compile Update="Views\MainView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Wizards\WizardFFCCalibrationPageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Wizards\WizardPageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Wizards\WizardTrainDarkImagePageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Wizards\WizardTrainWhiteImagePageView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -30,7 +39,16 @@
     <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Wizards\WizardFFCCalibrationPageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Wizards\WizardPageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Wizards\WizardTrainDarkImagePageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Wizards\WizardTrainWhiteImagePageView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

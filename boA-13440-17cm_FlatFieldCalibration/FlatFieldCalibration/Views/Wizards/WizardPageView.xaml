@@ -14,33 +14,38 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="8*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0" Margin="5 0 0 0">
+            <Grid Grid.Column="0" Margin="10 10 0 10">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="8*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0" Stretch="Uniform" Source="pack://application:,,,/Logo_white.png"/>
-                    <TextBlock Grid.Column="1" Text="{Binding Title}" />
+                    <Image Grid.Column="0" Grid.Row="0" Stretch="Uniform" Source="pack://application:,,,/Logo_white.png" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding Title, FallbackValue='Design title'}" FontSize="20" Foreground="White" HorizontalAlignment="Center"/>
+                    <Separator Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" BorderThickness="2" BorderBrush="White"/>
                 </Grid>
-                <ContentControl Grid.Row="1" Grid.RowSpan="3" Content="{Binding SideView}" />
-                <Grid Grid.Row="4">
+                <TextBlock Margin="0 10 0 0" Text="{Binding Description}" Grid.Row="1" TextWrapping="Wrap" Foreground="White"/>
+                <ContentControl Margin="0 10 0 0"  Grid.Row="2" Content="{Binding SideView}" />
+                <Grid Grid.Row="3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Content="{Binding LeftName}" Margin="5" Command="{Binding LeftClickedCmd}" Visibility="{Binding LeftVisibility}" />
-                    <Button Grid.Column="1" Content="{Binding RightName}" Margin="5" Command="{Binding RightClickedCmd}" Visibility="{Binding RightVisibility}"/>
+                    <Button Grid.Column="0" Content="{Binding LeftName}" Margin="5" Command="{Binding LeftClickedCmd}" Visibility="{Binding LeftVisibility}" IsEnabled="{Binding LeftEnabled}"/>
+                    <Button Grid.Column="1" Content="{Binding RightName}" Margin="5" Command="{Binding RightClickedCmd}" Visibility="{Binding RightVisibility}" IsEnabled="{Binding RightEnabled}"/>
                 </Grid>
             </Grid>
-            <ContentControl Grid.Column="1" Margin="0 5 5 5" Content="{Binding ImageView}" />
+            <ContentControl Grid.Column="1" Content="{Binding ImageView}" />
         </Grid>
     </Viewbox>
 </UserControl>

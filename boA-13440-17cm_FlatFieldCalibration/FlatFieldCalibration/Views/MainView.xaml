@@ -18,14 +18,14 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="8*"/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0" Margin="5 0 0 0">
+            <Grid Grid.Column="0" Margin="10 10 0 10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Image  Grid.Row="0" Stretch="Uniform" Source="pack://application:,,,/BASLER-Logo_white.png"/>
+                <Image  Grid.Row="0" Stretch="Uniform" Source="pack://application:,,,/BASLER-Logo_white.png" VerticalAlignment="Top"/>
                 <Expander Grid.Row="3" VerticalAlignment="Top" ExpandDirection="Down" HorizontalContentAlignment="Left" SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="Black" Visibility="Visible">
                     <Expander.Header>
                         <Label Content="Log"/>
@@ -43,7 +43,7 @@
                     </Expander.Content>
                 </Expander>
             </Grid>
-            <ContentControl Grid.Column="1" Margin="0 5 5 5" Content="{Binding ImageView}" />
+            <ContentControl Grid.Column="1" Content="{Binding ImageView}" />
         </Grid>
     </Viewbox>
 </UserControl>

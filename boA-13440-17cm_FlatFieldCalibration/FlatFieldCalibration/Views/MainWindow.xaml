@@ -18,6 +18,6 @@
         </i:EventTrigger>
     </i:Interaction.Triggers>
     <Grid>
-        <ContentControl Content="{Binding MainView}" />
+        <ContentControl Content="{Binding MainWindowView}" />
     </Grid>
 </Window>

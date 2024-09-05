@@ -13,4 +13,10 @@
     <DataTemplate DataType="{x:Type vmw:WizardPageViewModel}">
         <vw:WizardPageView/>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type vmw:WizardTrainDarkImagePageViewModel}">
+        <vw:WizardTrainDarkImagePageView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vmw:WizardTrainWhiteImagePageViewModel}">
+        <vw:WizardTrainWhiteImagePageView/>
+    </DataTemplate>
 </ResourceDictionary>
