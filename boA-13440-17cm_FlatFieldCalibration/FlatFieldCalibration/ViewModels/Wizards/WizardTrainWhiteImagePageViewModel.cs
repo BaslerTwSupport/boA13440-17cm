@@ -3,6 +3,7 @@
 namespace FlatFieldCalibration.ViewModels.Wizards;
 internal class WizardTrainWhiteImagePageViewModel : WizardSidePageViewModelBase
 {
+    public BaslerCommand SaveImgCmd { get; }
     public WizardTrainWhiteImagePageViewModel(WizardPageViewModel parent) 
         : base(parent)
     {
@@ -12,6 +13,7 @@ internal class WizardTrainWhiteImagePageViewModel : WizardSidePageViewModelBase
         LeftName = "Back";
         RightClickedCmd = new BaslerCommand(NextPage);
         RightName = "Next";
+        SaveImgCmd = new BaslerCommand(SaveImage);
     }
     private void BackPage()
     {
@@ -19,6 +21,10 @@ internal class WizardTrainWhiteImagePageViewModel : WizardSidePageViewModelBase
     }
     private void NextPage()
     {
-        _parent.Main.MainWindowView = _parent.Main.MainView;
+        _parent.SideView = new WizardFFCCalibrationPageViewModel(_parent);
+    }
+    private void SaveImage()
+    {
+
     }
 }

@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatFieldCalibration", "FlatFieldCalibration\FlatFieldCalibration.csproj", "{940EC0E0-6066-44EE-AD74-56305697F553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlatFieldCalibration", "FlatFieldCalibration\FlatFieldCalibration.csproj", "{940EC0E0-6066-44EE-AD74-56305697F553}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlatFieldCalibration.Test", "FlatFieldCalibration.Test\FlatFieldCalibration.Test.csproj", "{73D954CE-7AE1-4276-800C-9631B6160FA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{F662A67A-87A9-4049-80F3-23BBC0622B0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basler.Base", "Shared\Basler.Base\Basler.Base.csproj", "{8FCEE704-5ADE-40F3-997B-761B8BBC9FE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basler.Text", "Shared\Basler.Text\Basler.Text.csproj", "{1602782A-EFEC-4556-B4B6-BF8AE2AD934C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basler.Vision", "Shared\Basler.Vision\Basler.Vision.csproj", "{A72ED0D2-E291-42E0-90D2-E1C7021E128E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +24,28 @@ Global
 		{940EC0E0-6066-44EE-AD74-56305697F553}.Debug|x64.ActiveCfg = Debug|x64
 		{940EC0E0-6066-44EE-AD74-56305697F553}.Debug|x64.Build.0 = Debug|x64
 		{940EC0E0-6066-44EE-AD74-56305697F553}.Release|x64.ActiveCfg = Release|x64
+		{73D954CE-7AE1-4276-800C-9631B6160FA4}.Debug|x64.ActiveCfg = Debug|x64
+		{73D954CE-7AE1-4276-800C-9631B6160FA4}.Release|x64.ActiveCfg = Release|x64
+		{8FCEE704-5ADE-40F3-997B-761B8BBC9FE5}.Debug|x64.ActiveCfg = Debug|x64
+		{8FCEE704-5ADE-40F3-997B-761B8BBC9FE5}.Debug|x64.Build.0 = Debug|x64
+		{8FCEE704-5ADE-40F3-997B-761B8BBC9FE5}.Release|x64.ActiveCfg = Release|x64
+		{8FCEE704-5ADE-40F3-997B-761B8BBC9FE5}.Release|x64.Build.0 = Release|x64
+		{1602782A-EFEC-4556-B4B6-BF8AE2AD934C}.Debug|x64.ActiveCfg = Debug|x64
+		{1602782A-EFEC-4556-B4B6-BF8AE2AD934C}.Debug|x64.Build.0 = Debug|x64
+		{1602782A-EFEC-4556-B4B6-BF8AE2AD934C}.Release|x64.ActiveCfg = Release|x64
+		{1602782A-EFEC-4556-B4B6-BF8AE2AD934C}.Release|x64.Build.0 = Release|x64
+		{A72ED0D2-E291-42E0-90D2-E1C7021E128E}.Debug|x64.ActiveCfg = Debug|x64
+		{A72ED0D2-E291-42E0-90D2-E1C7021E128E}.Debug|x64.Build.0 = Debug|x64
+		{A72ED0D2-E291-42E0-90D2-E1C7021E128E}.Release|x64.ActiveCfg = Release|x64
+		{A72ED0D2-E291-42E0-90D2-E1C7021E128E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8FCEE704-5ADE-40F3-997B-761B8BBC9FE5} = {F662A67A-87A9-4049-80F3-23BBC0622B0E}
+		{1602782A-EFEC-4556-B4B6-BF8AE2AD934C} = {F662A67A-87A9-4049-80F3-23BBC0622B0E}
+		{A72ED0D2-E291-42E0-90D2-E1C7021E128E} = {F662A67A-87A9-4049-80F3-23BBC0622B0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D1CEDE1-76D2-4DEB-B3E6-DBA982752544}

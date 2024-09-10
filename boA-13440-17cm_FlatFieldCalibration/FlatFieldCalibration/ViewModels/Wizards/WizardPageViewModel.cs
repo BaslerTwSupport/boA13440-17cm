@@ -64,6 +64,6 @@ public class WizardPageViewModel : ViewModelBase
         _leftEnabled = _rightEnabled = true;
         ImageView = Main.MainView.ImageView;
         _sideView = new WizardSidePageViewModelBase(this);
-        SideView = new WizardTrainDarkImagePageViewModel(this);
+        SideView = new WizardTrainDarkImagePageViewModel(this);        
     }
 }

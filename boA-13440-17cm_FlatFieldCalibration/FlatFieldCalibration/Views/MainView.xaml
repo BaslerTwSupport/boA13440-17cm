@@ -22,10 +22,23 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Image  Grid.Row="0" Stretch="Uniform" Source="pack://application:,,,/BASLER-Logo_white.png" VerticalAlignment="Top"/>
+                <Border Grid.Row="2" BorderThickness="1" BorderBrush="White" CornerRadius="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Content="FFC"/>
+                        <Button Grid.Column="1" Content="Calibration" Command="{Binding FfcCmd}"/>
+                    </Grid>
+                </Border>
                 <Expander Grid.Row="3" VerticalAlignment="Top" ExpandDirection="Down" HorizontalContentAlignment="Left" SnapsToDevicePixels="True" BorderThickness="1" BorderBrush="Black" Visibility="Visible">
                     <Expander.Header>
                         <Label Content="Log"/>

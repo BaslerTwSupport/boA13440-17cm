@@ -20,7 +20,7 @@ public class MainWindowViewModel : ViewModelBase
         LoadedCmd = new BaslerCommand(Loaded);
         MainView = new MainViewModel(this);
         Wizards = new WizardPageViewModel(this);
-        MainWindowView = Wizards;
+        MainWindowView = MainView;
     }
 
     private void Loaded()

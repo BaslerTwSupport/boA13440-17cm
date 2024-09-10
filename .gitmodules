@@ -1,0 +1,3 @@
+[submodule "boA-13440-17cm_FlatFieldCalibration/Shared"]
+	path = boA-13440-17cm_FlatFieldCalibration/Shared
+	url = git@github.com:BaslerTwSupport/SharedCSharpLibraries.git
